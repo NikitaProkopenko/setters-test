@@ -56,7 +56,7 @@ gulp.task('build', (done) => {
 
 gulp.task('copy', () => {
   return gulp.src([
-    'src/fonts/**/*.{otf}',
+    'src/fonts/**/*.otf',
     'src/img/**',
     'src/js/**'
   ], {

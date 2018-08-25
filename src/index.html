@@ -5,9 +5,121 @@
     <title>COMPANY</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="format-detection" content="telephone=no">
-    <link href="css/style.css" rel="stylesheet">
+    <link href="css/style.min.css" rel="stylesheet">
   </head>
   <body>
-    <h1>Test</h1>
+    <header class="page-header">
+      <nav class="main-nav">
+        <a href="index.html" class="main-nav__logo">
+          Logo
+        </a>
+        <ul class="main-nav__list nav-list">
+          <li class="nav-list__item">
+            <a href="#">Пункт 1</a>
+          </li>
+          <li class="nav-list__item">
+            <a href="#">Пункт 2</a>
+          </li>
+          <li class="nav-list__item">
+            <a href="#">Пункт 3</a>
+          </li>
+          <li class="nav-list__item">
+            <a href="#">Пункт 4</a>
+          </li>
+          <li class="nav-list__item">
+            <a href="#">Пункт 5</a>
+          </li>
+        </ul>
+        <span class="main-nav__contact">
+          +7 000 111 22 33
+        </span>
+      </nav>
+    </header>
+    <main class="page-main">
+      <h1 class="visually-hidden">
+        Главная страница COMPANY
+      </h1>
+      <section class="banner">
+        <h2 class="banner__title">
+          Душа моя озарена неземной радостью
+        </h2>
+        <p class="banner__text">
+          Душа моя озарена неземной радостью, как эти чудесные весенние утра,
+          которыми я наслаждаюсь от всего сердца.
+        </p>
+        <button class="button" type="button">Button</button>
+      </section>
+      <section class="slider">
+        <button class="button button--slider button--back">
+          <span class="visually-hidden">Назад</span>
+        </button>
+        <button class="button button--slider button--back">
+          <span class="visually-hidden">Вперед</span>
+        </button>
+        <div class="slider__counter-wrapper">
+          <span class="slider__counter slider__counter--current">
+            01
+          </span>
+          <span class="slider__counter-divider"> / </span>
+          <span class="slider__counter">
+            04
+          </span>
+        </div>
+        <h4 class="slider__pretitle">
+          Надзаголовок
+        </h4>
+        <h2 class="slider__title">
+          Заголовок
+        </h2>
+        <p class="slider__text">
+          Душа моя озарена неземной радостью, как эти чудесные весенние утра,
+          которыми я наслаждаюсь от всего сердца. Я совсем один и блаженствую в здешнем краю,
+          словно созданном для таких, как я.
+        </p>
+        <button class="button button--slider" type="button">Button</button>
+        <img src="img/Slider_image.jpg" alt="Первый слайд">
+      </section>
+      <section class="slogan">
+        <h2 class="slogan__title">
+          Душа моя озарена неземной радостью
+        </h2>
+        <p class="slogan__text">
+          Душа моя озарена неземной радостью, как эти чудесные весенние утра, которыми я наслаждаюсь от всего сердца.
+          Я совсем один и блаженствую в
+        </p>
+      </section>
+      <section class="form">
+        <h2 class="visually-hidden">Форма обратной связи</h2>
+        <form class="form-contact" method="post" action="">
+          <fieldset class="form-contact__fieldset">
+            <div class="form-field">
+              <label class="form-field__label" for="name">Введите свое имя</label>
+              <input class="form-field__input" type="text" id="name" placeholder="Введите свое имя">
+            </div>
+            <div class="form-field">
+              <label class="form-field__label" for="phone">Введите свой телефон</label>
+              <input class="form-field__input" type="number" id="phone" placeholder="Введите свой телефон">
+            </div>
+            <div class="form-field">
+              <label class="form-field__label" for="email">Введите свой email</label>
+              <input class="form-field__input" type="text" id="email" placeholder="Введите свой email">
+            </div>
+          </fieldset>
+          <fieldset class="form-contact__fieldset terms">
+            <ul class="terms__list">
+              <li class="terms__item form-checkbox">
+                <input class="form-checkbox__input" type="checkbox" name="mailing" id="mailing">
+                <label class="form-checkbox__label" for="mailing">Подписаться на Email-рассылку</label>
+              </li>
+              <li class="terms__item form-checkbox">
+                <input class="form-checkbox__input" type="checkbox" name="data-terms" id="data-terms" checked>
+                <label class="form-checkbox__label" for="data-terms">Я согласен с условиями политики обработки данных</label>
+              </li>
+            </ul>
+          </fieldset>
+          <button type="submit" class="button button--send">Button</button>
+        </form>
+      </section>
+    </main>
   </body>
 </html>
