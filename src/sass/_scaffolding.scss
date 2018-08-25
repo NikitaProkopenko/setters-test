@@ -1,3 +1,30 @@
-@import 'base/normalize';
-@import 'base/variables';
-@import 'scaffolding';
+@font-face {
+  font-family: 'Graphik Bold';
+  src: url('../fonts/GraphikLCG-Bold.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'Graphik Regular';
+  src: url('../fonts/GraphikLCG-Regular.otf') format('opentype');
+}
+
+body {
+  min-width: 320px;
+  margin: 0 auto;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+
+  font-family: 'Graphik Regular', 'Arial', sans-serif;
+  font-size: 14px;
+  line-height: 22px;
+  color: $text-black;
+
+  background-color: $bg-white;
+}
+
+*,
+::before,
+::after {
+  box-sizing: inherit;
+}

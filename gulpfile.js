@@ -4,7 +4,7 @@ const gulp = require('gulp');
 const sass = require('gulp-sass');
 const plumber = require('gulp-plumber');
 const postcss = require('gulp-postcss');
-const autoprefixer = require('gulp-autoprefixer');
+const autoprefixer = require('autoprefixer');
 const server = require('browser-sync').create();
 const minify = require('gulp-csso');
 const rename = require('gulp-rename');
@@ -26,7 +26,12 @@ gulp.task('style', () => {
   .pipe(server.stream());
 });
 
-gulp.task("serve", () => {
+gulp.task('html', () => {
+  gulp.src('src/*.html')
+  .pipe(gulp.dest('build'));
+});
+
+gulp.task('serve', () => {
   server.init({
     server: 'build/',
     notify: false,
@@ -44,6 +49,7 @@ gulp.task('build', (done) => {
     'clean',
     'copy',
     'style',
+    'html',
     done
   );
 });
