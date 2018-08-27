@@ -9,8 +9,9 @@
   }
 
   &__list {
+    display: none;
     margin: 0;
-    display: flex;
+    // display: flex;
     flex-flow: column;
     list-style: none;
     padding: 0;
