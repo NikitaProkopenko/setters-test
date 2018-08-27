@@ -1,0 +1,12 @@
+.slider {
+  &__img {
+    width: 320px;
+    height: auto;
+  }
+
+  &__content-wrapper {
+    background-color: $bg-dark-grey;
+    color: $text-white;
+    padding: 0 15px;
+  }
+}

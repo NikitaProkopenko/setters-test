@@ -1,0 +1,14 @@
+.banner {
+  background-image: url("../../img/BANNER.jpg");
+  background-color: $bg-dark-grey;
+  background-repeat: no-repeat;
+  padding: 210px 0;
+  background-position: -550px -220px;
+  background-size: 1104px 829px;
+
+  &__overlay {
+    with: 100%;
+    height: 600px;
+    background-color: rgba(0, 0, 0, .3);
+  }
+}
