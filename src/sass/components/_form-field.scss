@@ -3,6 +3,7 @@
   flex-flow: column;
   width: 100%;
   position: relative;
+  margin-bottom: 27px;
 
   &__label {
     padding: 0 20px;
@@ -17,13 +18,17 @@
     border: none;
     border-bottom: 2px solid $unactive-input-border;
 
+    &::placeholder {
+      color: $text-black;
+    }
+
     &:focus {
       outline: none;
       border-color: $active-input-border;
     }
 
     &:focus + label {
-      color: black;
+      color: $active-label;
     }
   }
 }

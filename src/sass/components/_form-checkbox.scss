@@ -1,0 +1,35 @@
+.form-checkbox {
+
+
+  &__label {
+    position: relative;
+    font-size: 12px;
+    line-height: 18px;
+    text-transform: uppercase;
+    letter-spacing: .05em;
+  }
+
+  &__label::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -35px;
+    width: 15px;
+    height: 15px;
+    background-color: $bg-white;
+    border: 1px solid $bg-black;
+  }
+
+  &__input:checked + &__label::before {
+    background-image: url("../../img/icon_check.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: $bg-black;
+    width: 15px;
+    height: 15px;
+  }
+
+  &__input {
+    display: none;
+  }
+}
