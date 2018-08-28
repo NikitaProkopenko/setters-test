@@ -1,5 +1,5 @@
 .main-nav {
-  margin: 52px 0 0;
+  padding: 52px 0 0;
 
   &__controls-wrapper {
     display: flex;
@@ -10,9 +10,8 @@
   }
 
   &__list {
-    display: none;
     margin: 0;
-    // display: flex;
+    display: none;
     flex-flow: column;
     list-style: none;
     padding: 0;
@@ -21,7 +20,8 @@
   &__item {
     padding: 8px 0 8px 16px;
 
-    a {
+    a,
+    span {
       text-decoration: none;
       color: $text-white;
       font-size: 12px;
@@ -30,8 +30,38 @@
     }
   }
 
+  &__item:last-child {
+    padding-bottom: 30px;
+  }
+
   &__logo {
     width: 116px;
     height: 36px;
+  }
+}
+
+// Navigation behaviour styles
+
+.main-nav.opened {
+  background-color: $bg-black;
+
+  .main-nav__list {
+    display: flex;
+  }
+
+  .button--toggle {
+    transform: rotate(45deg);
+    box-shadow: none;
+  }
+
+  .button--toggle::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 22px;
+    height: 2px;
+    transform: rotate(90deg);
+    background-color: $bg-white;
   }
 }
