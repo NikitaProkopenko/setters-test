@@ -32,3 +32,11 @@
     margin: 0 0 64px 0;
   }
 }
+
+// Tablet styles
+
+@media (min-width: $tablet-width) {
+  .banner {
+    background-size: 1324px auto;
+  }
+}

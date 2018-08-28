@@ -70,3 +70,19 @@
     font-family: "Graphik Regular", "Arial", sans-serif;
   }
 }
+
+// Tablet styles
+
+@media (min-width: $tablet-width) {
+  .slider {
+    &__text-wrapper {
+      width: 320px;
+      padding-top: 60px;
+    }
+
+    &__img {
+      width: 420px;
+      left: 370px
+    }
+  }
+}

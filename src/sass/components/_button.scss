@@ -40,3 +40,15 @@
     padding: 5px;
   }
 }
+
+// Tablet styles
+
+@media (min-width: $tablet-width) {
+  .button {
+    &--toggle {
+      width: 42px;
+      height: 4px;
+      box-shadow: 0 12px 0 0 #ffffff;
+    }
+  }
+}
