@@ -52,3 +52,21 @@
     }
   }
 }
+
+// Large Desktop styles
+
+@media (min-width: $desktop-lg-width) {
+  .button {
+    &--toggle {
+      display: none;
+    }
+
+    &--slide-content {
+      background-color: $bg-white;
+      padding: 28px 98px;
+      border-radius: 40px;
+      color: $text-black;
+      margin-left: 80px;
+    }
+  }
+}

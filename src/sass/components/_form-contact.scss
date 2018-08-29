@@ -5,3 +5,18 @@
     margin: 0 0 23px;
   }
 }
+
+@media (min-width: $desktop-lg-width) {
+  .form-contact {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+
+    &__fieldset {
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: space-around;
+      margin-bottom: 24px;
+    }
+  }
+}

@@ -12,3 +12,25 @@
     margin-bottom: 12px;
   }
 }
+
+@media (min-width: $desktop-lg-width) {
+  .terms {
+    margin-bottom: 92px;
+
+    &__list {
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: space-around;
+    }
+
+    &__item {
+      order: 2;
+      padding-left: 104px;
+    }
+
+    &__item:last-child {
+      order: 1;
+      margin-right: 60px;
+    }
+  }
+}

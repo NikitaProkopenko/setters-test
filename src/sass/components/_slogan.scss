@@ -15,3 +15,25 @@
     letter-spacing: .01em;
   }
 }
+
+// Large desktop styles
+
+@media (min-width: $desktop-lg-width) {
+  .slogan {
+    width: 730px;
+    margin: 0 auto;
+    margin-bottom: 84px;
+
+    &__title {
+      font-size: 59px;
+      line-height: 76px;
+      text-align: center;
+    }
+
+    &__text {
+      width: 555px;
+      margin: 0 auto;
+      text-align: center;
+    }
+  }
+}

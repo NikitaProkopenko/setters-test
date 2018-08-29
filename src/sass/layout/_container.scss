@@ -3,3 +3,12 @@
   padding: 0 16px;
   margin: 0 auto;
 }
+
+// Large Desktop styles
+
+@media (min-width: $desktop-lg-width) {
+  .container {
+    max-width: 1170px;
+  }
+}
+

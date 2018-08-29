@@ -1,7 +1,6 @@
 .form-field {
   display: flex;
   flex-flow: column;
-  width: 100%;
   position: relative;
   margin-bottom: 27px;
 
@@ -30,5 +29,13 @@
     &:focus + label {
       color: $active-label;
     }
+  }
+}
+
+@media (min-width: $desktop-lg-width) {
+  .form-field {
+    width: 327px;
+    margin-right: 26px;
+    margin-left: 26px;
   }
 }

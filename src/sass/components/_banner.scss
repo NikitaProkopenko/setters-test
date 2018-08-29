@@ -40,3 +40,28 @@
     background-size: 1324px auto;
   }
 }
+
+// Large desktop styles
+
+@media (min-width: $desktop-lg-width) {
+  .banner {
+    padding: 448px 0 105px;
+    background-size: 1440px auto;
+    background-position: center -230px;
+    margin-bottom: 177px;
+
+    &__title {
+      width: 655px;
+      font-family: "Graphik Regular", "Arial", sans-serif;
+      font-size: 60px;
+      line-height: 70px;
+      margin: -190px 0 48px;
+    }
+
+    &__text {
+      width: 488px;
+      line-height: 30px;
+      margin-bottom: 68px;
+    }
+  }
+}

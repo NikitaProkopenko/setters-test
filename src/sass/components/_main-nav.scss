@@ -7,6 +7,7 @@
     justify-content: space-between;
     align-items: center;
     position: relative;
+    padding: 0 16px;
   }
 
   &__list {
@@ -81,6 +82,59 @@
     .button--toggle::before {
       width: 42px;
       height: 4px;
+    }
+  }
+}
+
+// Large Desktop styles
+
+@media (min-width: $desktop-lg-width) {
+  .main-nav {
+    display: flex;
+    flex-flow: row wrap;
+    width: 1170px;
+    margin: 0 auto;
+    justify-content: space-between;
+
+    &__logo {
+      width: 145px;
+      height: 50px;
+    }
+
+    &__controls-wrapper {
+      padding-top: 10px;
+    }
+
+    &.opened,
+    &.closed {
+      .main-nav__list{
+        display: flex;
+      }
+    }
+
+    &__list {
+      flex-flow: row wrap;
+      padding-top: 22px;
+    }
+
+    &__item {
+      padding: 0 0 0 45px;
+
+      a,
+      span {
+        letter-spacing: .03em;
+      }
+
+      span {
+        font-size: 12px;
+        font-family: "Graphik Regular", "Arial", sans-serif;
+      }
+    }
+
+    &__item:last-child {
+      padding-bottom: 0px;
+      padding-right: 20px;
+      padding-left: 100px;
     }
   }
 }
