@@ -15,8 +15,7 @@
   &__content-wrapper {
     background-color: $bg-dark-grey;
     color: $text-white;
-    margin: 0 15px 64px;
-    padding-bottom: 60px;
+    padding: 0 15px 64px;
   }
 
   &__controls-wrapper {
@@ -28,7 +27,6 @@
     justify-content: space-between;
     align-items: center;
     padding: 0 16px;
-    z-index: 2;
   }
 
   &__counter-wrapper {
@@ -39,9 +37,8 @@
 
   &__text-wrapper {
     padding-top: 558px;
+    padding-left: 5px;
     margin-bottom: 50px;
-    margin-left: 20px;
-    margin-right: 20px;
   }
 
   &__counter,
@@ -125,10 +122,10 @@
     }
 
     &__img {
-      width: 450px;
+      width: 480px;
       height: auto;
-      top: 66px;
-      left: 500px;
+      top: 226px;
+      left: 480px;
     }
 
     &__pretitle {
