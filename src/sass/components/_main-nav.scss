@@ -29,6 +29,14 @@
       text-transform: uppercase;
       font-family: "Graphik Bold", "Arial", sans-serif;
     }
+
+    a:hover {
+      color: #e7e7e7;
+    }
+
+    a:active {
+      color: #f4f4f4;
+    }
   }
 
   &__item:last-child {
@@ -38,6 +46,14 @@
   &__logo {
     width: 116px;
     height: 36px;
+
+    &:hover .cls-2 {
+      fill: #e7e7e7;
+    }
+
+    &:active .cls-2 {
+      fill: #f4f4f4;
+    }
   }
 }
 
