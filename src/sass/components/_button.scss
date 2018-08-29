@@ -53,9 +53,10 @@
   }
 }
 
-// Large Desktop styles
 
-@media (min-width: $desktop-lg-width) {
+// Desktop styles
+
+@media (min-width: $desktop-width) {
   .button {
     &--toggle {
       display: none;

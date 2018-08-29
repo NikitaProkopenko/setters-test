@@ -86,13 +86,13 @@
   }
 }
 
-// Large Desktop styles
+// Desktop styles
 
-@media (min-width: $desktop-lg-width) {
+@media (min-width: $desktop-width) {
   .main-nav {
     display: flex;
     flex-flow: row wrap;
-    width: 1170px;
+    width: 1024px;
     margin: 0 auto;
     justify-content: space-between;
 
@@ -136,5 +136,13 @@
       padding-right: 20px;
       padding-left: 100px;
     }
+  }
+}
+
+// Large Desktop styles
+
+@media (min-width: $desktop-lg-width) {
+  .main-nav {
+    width: 1170px;
   }
 }

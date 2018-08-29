@@ -91,17 +91,16 @@
   }
 }
 
+// Desktop styles
 
-// Large desktop styles
-
-@media (min-width: $desktop-lg-width) {
+@media (min-width: $desktop-width) {
   .slider {
     padding-top: 100px;
     padding-bottom: 312px;
 
     &__controls-wrapper {
       top: 11px;
-      left: 717px;
+      left: 700px;
     }
 
     &__counter-wrapper {
@@ -118,15 +117,15 @@
     &__text-wrapper {
       width: 420px;
       padding-top: 60px;
-      padding-left: 80px;
+      padding-left: 40px;
       margin-bottom: 70px;
     }
 
     &__img {
-      width: 630px;
-      height: 470px;
+      width: 480px;
+      height: auto;
       top: 226px;
-      left: 730px;
+      left: 480px;
     }
 
     &__pretitle {
@@ -139,6 +138,26 @@
     &__title {
       margin: 0 0 48px 0;
       font-size: 25px;
+    }
+  }
+}
+
+// Large desktop styles
+
+@media (min-width: $desktop-lg-width) {
+  .slider {
+    &__controls-wrapper {
+      left: 717px;
+    }
+
+    &__text-wrapper {
+      padding-left: 80px;
+    }
+
+    &__img {
+      width: 630px;
+      height: 470px;
+      left: 730px;
     }
   }
 }

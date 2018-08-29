@@ -32,10 +32,16 @@
   }
 }
 
+@media (min-width: $desktop-width) {
+  .form-field {
+    width: 227px;
+    margin-right: 26px;
+    margin-left: 26px;
+  }
+}
+
 @media (min-width: $desktop-lg-width) {
   .form-field {
     width: 327px;
-    margin-right: 26px;
-    margin-left: 26px;
   }
 }

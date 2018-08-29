@@ -16,13 +16,14 @@
   }
 }
 
-// Large desktop styles
+// Desktop styles
 
-@media (min-width: $desktop-lg-width) {
+@media (min-width: $desktop-width) {
   .slogan {
     width: 730px;
     margin: 0 auto;
     margin-bottom: 84px;
+    margin-top: -100px;
 
     &__title {
       font-size: 59px;
@@ -35,5 +36,13 @@
       margin: 0 auto;
       text-align: center;
     }
+  }
+}
+
+// Large desktop styles
+
+@media (min-width: $desktop-lg-width) {
+  .slogan {
+    margin-top: 0;
   }
 }

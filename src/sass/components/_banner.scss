@@ -41,13 +41,13 @@
   }
 }
 
-// Large desktop styles
+// Desktop styles
 
-@media (min-width: $desktop-lg-width) {
+@media (min-width: $desktop-width) {
   .banner {
     padding: 448px 0 105px;
-    background-size: 1440px auto;
-    background-position: center -230px;
+    background-size: 1024px auto;
+    background-position: center;
     margin-bottom: 177px;
 
     &__title {
@@ -63,5 +63,14 @@
       line-height: 30px;
       margin-bottom: 68px;
     }
+  }
+}
+
+// Large desktop styles
+
+@media (min-width: $desktop-lg-width) {
+  .banner {
+    background-size: 1440px auto;
+    background-position: center -230px;
   }
 }
