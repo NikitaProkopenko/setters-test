@@ -13,4 +13,33 @@ toggleButton.addEventListener('click', function() {
   }
 });
 
-
+window.onload = function () {
+  var mySwiper = new Swiper('.swiper-container', {
+    // Optional parameters
+    loop: true,
+    
+    // Navigation arrows
+    navigation: {
+      nextEl: '.button--forward',
+      prevEl: '.button--back',
+    },
+    
+    pagination: {
+      el: '.slider__counter-wrapper',
+      type: 'fraction',
+      formatFractionTotal: function(value) {
+        return '0' + value;
+      },
+      formatFractionCurrent: function(value) {
+        return '0' + value;
+      },
+      renderFraction: function(currentClass, totalClass) {
+        return (
+          '<span class="slider__counter slider__counter--current ' + currentClass + '"></span>' +
+          '<span class="slider__counter-divider"> / </span>' +
+          '<span class="slider__counter ' + totalClass + '"></span>'
+        );
+      },
+    }
+  });
+};

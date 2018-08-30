@@ -27,6 +27,7 @@
     justify-content: space-between;
     align-items: center;
     padding: 0 16px;
+    z-index: 2;
   }
 
   &__counter-wrapper {
@@ -124,8 +125,8 @@
     &__img {
       width: 480px;
       height: auto;
-      top: 226px;
-      left: 480px;
+      top: 166px;
+      left: 500px;
     }
 
     &__pretitle {
@@ -157,6 +158,7 @@
     &__img {
       width: 630px;
       height: 470px;
+      top: 226px;
       left: 730px;
     }
   }

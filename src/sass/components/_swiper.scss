@@ -1,0 +1,34 @@
+// Redefined styles for Swiper
+
+.swiper-container {
+  min-width: 320px;
+  height: 1097px;
+
+  .slider__counter-wrapper.swiper-pagination-fraction {
+    width: 59px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .swiper-container {
+    width: $tablet-width;
+    height: 659px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .swiper-container {
+    width: $desktop-width;
+    height: 914px;
+
+    .slider__counter-wrapper.swiper-pagination-fraction {
+      width: 69px;
+    }
+  }
+}
+
+@media (min-width: $desktop-lg-width) {
+  .swiper-container {
+    width: $desktop-lg-width;
+  }
+}
